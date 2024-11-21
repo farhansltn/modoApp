@@ -1,0 +1,19 @@
+{
+  "slides": [
+    {
+      "src": "https://picsum.photos/seed/img1/600/400",
+      "alt": "Image 1 for carousel",
+      "caption": "Modoo Retail Company - Innovating in E-commerce and Retail Sector."
+    },
+    {
+      "src": "https://picsum.photos/seed/img2/600/400",
+      "alt": "Image 2 for carousel",
+      "caption": "Offering high-quality products across fashion, electronics, and home goods."
+    },
+    {
+      "src": "https://picsum.photos/seed/img3/600/400",
+      "alt": "Image 3 for carousel",
+      "caption": "Providing seamless shopping experience with personalized service."
+    }
+  ]
+}

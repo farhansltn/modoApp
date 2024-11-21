@@ -1,0 +1,86 @@
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevents overflow of images */
+}
+
+.slide {
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+  width: 100%;
+  height: 100%; /* Ensure the slide takes full height of carousel */
+  object-fit: cover; /* Crop the image to fit */
+  transition: transform 0.5s ease-in-out; /* Smooth transition for slide changes */
+}
+
+.slide-hidden {
+  display: none;
+}
+
+.arrow {
+  position: absolute;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5)); /* More subtle shadow for arrows */
+  width: 2rem;
+  height: 2rem;
+  color: white;
+  z-index: 10; /* Ensure arrows are above slides */
+  transition: color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.arrow:hover {
+  cursor: pointer;
+  color: #ffdd57; /* Change color on hover for better visibility */
+}
+
+.arrow-left {
+  left: 1rem;
+}
+
+.arrow-right {
+  right: 1rem;
+}
+
+.indicators {
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  justify-content: center; /* Center the indicators */
+  width: 100%; /* Ensure the indicators span the width */
+}
+
+.indicator {
+  background-color: white;
+  height: 0.8rem;
+  width: 0.8rem;
+  border-radius: 50%; /* Ensure it is a perfect circle */
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  margin: 0 0.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for indicator changes */
+}
+
+.indicator:hover {
+  background-color: #ffdd57; /* Highlight on hover for better UX */
+}
+
+.indicator-inactive {
+  background-color: grey; /* Default inactive state */
+}
+
+/* Style for the tweet caption overlay */
+.tweet-caption {
+  position: absolute;
+  bottom: 0; /* Positioned at the bottom of the image */
+  left: 0;
+  padding: 1rem; /* Added padding for better spacing */
+  background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background for readability */
+  color: white; /* White text for contrast */
+  border-radius: 0.5rem; /* Rounded corners */
+  text-align: left; /* Align text to the left */
+  max-width: 90%; /* Limit the width of the caption */
+  transform: translate(5%,-45%); /* Ensure no vertical translation */
+}
